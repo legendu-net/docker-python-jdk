@@ -1,7 +1,7 @@
 FROM dclong/python
 
-RUN apt-get update -y \
-    && apt-get install -y \
+RUN apt-get -y update \
+    && apt-get -y install \
         openjdk-11-jdk maven gradle \
     && apt-get autoremove \
     && apt-get autoclean 
